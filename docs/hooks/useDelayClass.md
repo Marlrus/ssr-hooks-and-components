@@ -39,7 +39,7 @@ const Component: FC = () => {
   );
 };
 
-export default Modal;
+export default Component;
 ```
 
 In this example the component is rendered by default, visible is set with a 1ms delay (default), and the component is unrendered with a 200ms delay (default). The component will apply the fade-in styles on mounting and will fade-out when the toggle is clicked. This will work seemlessy with a transition property set at 0.2s.
