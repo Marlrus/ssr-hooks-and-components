@@ -1,10 +1,10 @@
 # useSSRMultistep
 
-This hook bootstraps with **useResizeDetector** and allows for the creation of multi step/page forms or content while leveraging the benefits of SSR/ISA/SSG. The multi-step works like a film camera where you have a window and a strip of film. The frames creates the strip, the strip is shown by the window depending on the selected frame.
+This hook bootstraps with **useResizeDetector** and allows for the creation of multi step/page forms or content while leveraging the benefits of SSR/ISA/SSG. The multi-step works like a film camera where you have a window and a strip of film. The frames create the strip, the strip is shown by the window depending on the selected frame.
 
 Window > Strip > Frame
 
-The window can be resized dynamically, the width value is used to set the width value of each frame which enlarges the strip. Once a frame is triggered/moved, the strip is moved to accomodate the frame that should be displayed. Each frame has a preset opacity animation which is set to 0 and transitioned to 1 if the frame is selected. The content uses the **visiblity** property to move between visible and hidden which disables tab interaction and undesired DOM interaction.
+The window can be resized dynamically, the width value is used to set the width value of each frame which enlarges the strip. Once a frame is triggered/moved, the strip is moved to accomodate the frame that should be displayed. Each frame has a preset opacity animation which is set to 0 and transitioned to 1 if the frame is selected. The content uses the **visibility** property to disables tab interaction and undesired DOM interaction.
 
 Crawlers indexing your page will be able to read the entirety of your content and the behaviour when users interact with the page emulates the behaviour of a CSR app.
 
@@ -42,17 +42,17 @@ const Component: FC = () => {
     <div style={windowStyles} ref={ref}>
       <div style={stripStyles}>
         <div style={frameStyles(0)}>
-          <button onClick={() => setFrame(frame + 1)}>Next Step</button>
-          <Step1Content />
+          <button onClick={() => setFrame(frame + 1)}>Next Frame</button>
+          <Frame1Content />
         </div>
         <div style={frameStyles(1)}>
-          <button onClick={() => setFrame(frame + 1)}>Next Step</button>
-          <button onClick={() => setFrame(frame - 1)}>Previous Step</button>
-          <Step2Content />
+          <button onClick={() => setFrame(frame + 1)}>Next Frame</button>
+          <button onClick={() => setFrame(frame - 1)}>Previous Frame</button>
+          <Frame2Content />
         </div>
         <div style={frameStyles(2)}>
-          <button onClick={() => setFrame(frame - 1)}>Previous Step</button>
-          <Step3Content />
+          <button onClick={() => setFrame(frame - 1)}>Previous Frame</button>
+          <Frame3Content />
         </div>
       </div>
     </div>
@@ -71,9 +71,9 @@ To use this hook you need 3 containers:
 - The **frame** property is used to manage the styles and behaviour of the strip and frame. This determines how much the strip should be moved and what frame is the one being displayed.
 - The **setFrame** function allows you to move between frames, the logic for style changes is handled by the hook internally.
 
-In this example you have buttons to change the frame in each **frame** and its content beneath it. The **window** has a minWidth of 288px and a maxWidth of 592px. Clicking the buttons will move the strip along, you could jump between further frames by using a hardcoded value in **setFrame**.
+In this example you have buttons to change the frame in each **frame** and its content beneath it. The **window** has a minWidth of 288px and a maxWidth of 592px. Clicking the buttons will move the strip along, you could jump between non-adjacent frames by using a hardcoded value in **setFrame**.
 
-Ideally **setFrame** would be passed to the component in the frame as a prop so that it can be used to handle navigation between frames internally.
+Ideally **setFrame** would be passed to the component inside the frame as a prop so that it can be used to handle navigation between frames internally.
 
 ## Config Options
 

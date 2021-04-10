@@ -3,7 +3,7 @@
 1. rm -rf .git
 2. rm yarn.lock
 3. git init
-4. npm i -D typescript @types/react @types/node prettier @types/node-sass
+4. npm i -D typescript @types/react @types/node prettier @types/node-sass @types/react-dom
 5. npm i sass env-cmd
 6. touch tsconfig.json prettier.config.js .env.development .env.local .env.production
 7. mkdir atoms molecules organisms sections hooks contexts services types utils
