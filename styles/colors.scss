@@ -1,0 +1,160 @@
+// ==== PRIMARY COLORS ====
+
+// Breakpoints
+$mobile: 320px;
+$tablet: 600px;
+$desktop: 1024px;
+
+// Main
+$white: #ffffff;
+$black: #000000;
+
+// Cerulean Blue
+$ceruleanBlue0: #d9f2ff;
+$ceruleanBlue5: #c7e8ff;
+$ceruleanBlue10: #b6dbfe;
+$ceruleanBlue15: #a4ccfd;
+$ceruleanBlue20: #92bafc;
+$ceruleanBlue30: #6e90eb;
+$ceruleanBlue40: #5067dc;
+$ceruleanBlue50: #3843d0;
+$ceruleanBlue60: #2a34a5;
+$ceruleanBlue70: #212b80;
+$ceruleanBlue80: #1a2360;
+$ceruleanBlue90: #141d45;
+$ceruleanBlue100: #0f162e;
+
+// Bittersweet Orange
+$bittersweetOrange0: #ffe9e9;
+$bittersweetOrange5: #ffdada;
+$bittersweetOrange10: #ffcbcb;
+$bittersweetOrange15: #ffbbbb;
+$bittersweetOrange20: #ffaaaa;
+$bittersweetOrange30: #ff8a8a;
+$bittersweetOrange40: #fd746d;
+$bittersweetOrange50: #f96654;
+$bittersweetOrange60: #d75749;
+$bittersweetOrange70: #b94b41;
+$bittersweetOrange80: #9f423c;
+$bittersweetOrange90: #873a38;
+$bittersweetOrange100: #733434;
+
+// Dark Turquoise
+$darkTurquoise0: #d4fffb;
+$darkTurquoise5: #bafdf7;
+$darkTurquoise10: #a1fbf3;
+$darkTurquoise15: #87f7ee;
+$darkTurquoise20: #6ef4e8;
+$darkTurquoise30: #44eadc;
+$darkTurquoise40: #1eddcd;
+$darkTurquoise50: #00ccbb;
+$darkTurquoise60: #00bbab;
+$darkTurquoise70: #00a89a;
+$darkTurquoise80: #009387;
+$darkTurquoise90: #007f74;
+$darkTurquoise100: #006e65;
+
+// Selective Yellow
+$selectiveYellow0: #ffecbf;
+$selectiveYellow5: #ffe9ac;
+$selectiveYellow10: #ffe598;
+$selectiveYellow15: #ffe183;
+$selectiveYellow20: #ffdc6e;
+$selectiveYellow30: #ffd047;
+$selectiveYellow40: #ffc222;
+$selectiveYellow50: #ffb502;
+$selectiveYellow60: #eea800;
+$selectiveYellow70: #db9a00;
+$selectiveYellow80: #c88c00;
+$selectiveYellow90: #b47f00;
+$selectiveYellow100: #a37200;
+
+// Wild Watermelon
+$wildWatermelon0: #ffd2db;
+$wildWatermelon5: #ffc9d4;
+$wildWatermelon10: #ffbfcd;
+$wildWatermelon15: #ffb5c5;
+$wildWatermelon20: #ffaabd;
+$wildWatermelon30: #ff90a8;
+$wildWatermelon40: #ff7994;
+$wildWatermelon50: #ff6584;
+$wildWatermelon60: #e9506f;
+$wildWatermelon70: #d5424f;
+$wildWatermelon80: #c33854;
+$wildWatermelon90: #b4324c;
+$wildWatermelon100: #a62e46;
+
+// Cold Grey
+$coldGrey0: #f9faff;
+$coldGrey5: #e9ebf4;
+$coldGrey10: #dadce9;
+$coldGrey15: #cbcede;
+$coldGrey20: #bdc1d3;
+$coldGrey30: #a1a5bd;
+$coldGrey40: #888da6;
+$coldGrey50: #727790;
+$coldGrey60: #5e6279;
+$coldGrey70: #4c4f63;
+$coldGrey80: #3a3d4c;
+$coldGrey90: #292b36;
+$coldGrey100: #18191f;
+
+// Functional Green
+$functionalGreen0: #d9ffe6;
+$functionalGreen5: #c2fdd7;
+$functionalGreen10: #acfac7;
+$functionalGreen15: #94f6b6;
+$functionalGreen20: #7df1a6;
+$functionalGreen30: #55e688;
+$functionalGreen40: #30d76c;
+$functionalGreen50: #13c352;
+$functionalGreen60: #06af42;
+$functionalGreen70: #009836;
+$functionalGreen80: #00802d;
+$functionalGreen90: #006825;
+$functionalGreen100: #00541d;
+
+// Functional Yellow
+$functionalYellow0: #ffe6cf;
+$functionalYellow5: #ffdfbe;
+$functionalYellow10: #ffd8ad;
+$functionalYellow15: #ffcf9a;
+$functionalYellow20: #ffc687;
+$functionalYellow30: #ffb060;
+$functionalYellow40: #ff9a3c;
+$functionalYellow50: #f8851c;
+$functionalYellow60: #e1710b;
+$functionalYellow70: #c86102;
+$functionalYellow80: #ae5400;
+$functionalYellow90: #944700;
+$functionalYellow100: #7d3c00;
+
+// Functional Red
+$functionalRed0: #ffe0e0;
+$functionalRed5: #ffcfcf;
+$functionalRed10: #ffbebe;
+$functionalRed15: #ffabab;
+$functionalRed20: #ff9898;
+$functionalRed30: #fb7272;
+$functionalRed40: #f34e4d;
+$functionalRed50: #e8302f;
+$functionalRed60: #db1817;
+$functionalRed70: #c70a09;
+$functionalRed80: #b10302;
+$functionalRed90: #9c0000;
+$functionalRed100: #8a0000;
+
+// Functional Blue
+$functionalBlue0: #d9f2ff;
+$functionalBlue5: #c7e8ff;
+$functionalBlue10: #b6dbfe;
+$functionalBlue15: #a4ccfd;
+$functionalBlue20: #92bafc;
+$functionalBlue30: #6e90eb;
+$functionalBlue40: #5067dc;
+$functionalBlue50: #3843d0;
+$functionalBlue60: #2a34a5;
+$functionalBlue70: #212b80;
+$functionalBlue80: #1a2360;
+$functionalBlue90: #141d45;
+$functionalBlue100: #0f162e;
